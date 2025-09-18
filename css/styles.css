@@ -1,0 +1,135 @@
+/*
+  Paleta de colores personalizada para Minecraft
+  Verde esmeralda: #10b981
+  Marrón tierra: #6b4226
+  Azul cielo: #38bdf8
+*/
+:root {
+  --color-emerald: #10b981;
+  --color-earth: #6b4226;
+  --color-sky: #38bdf8;
+  --color-light: #f8fafc;
+  --color-dark: #22223b;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Navbar personalizado */
+.navbar {
+  background: linear-gradient(90deg, var(--color-emerald) 60%, var(--color-sky) 100%);
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 80vh;
+  background: url('https://i.imgur.com/0Q8Z4bB.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 185, 129, 0.3);
+  z-index: 1;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-emerald {
+  background: var(--color-emerald);
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(16,185,129,0.15);
+}
+.btn-emerald:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+.btn-sky {
+  background: var(--color-sky);
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+.btn-sky:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.text-emerald { color: var(--color-emerald); }
+.text-sky { color: var(--color-sky); }
+.bg-sky { background: var(--color-sky); }
+.bg-earth { background: var(--color-earth); color: #fff; }
+
+/* Cards estilo Minecraft */
+.card-minecraft {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(59,130,246,0.08);
+  border: 2px solid var(--color-earth);
+  background: linear-gradient(135deg, var(--color-light) 80%, var(--color-emerald) 20%);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.card-minecraft:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(16,185,129,0.18);
+}
+.card-minecraft img {
+  border-radius: 10px 10px 0 0;
+  filter: pixelate(2px);
+}
+
+/* Pixelado para imágenes */
+@media (min-width: 0px) {
+  .card-minecraft img {
+    image-rendering: pixelated;
+  }
+}
+
+/* Carousel */
+.carousel-inner img {
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(59,130,246,0.12);
+}
+
+/* Footer */
+footer {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 8px rgba(16,185,129,0.08);
+}
+
+/* Animaciones suaves */
+section, .card, .btn {
+  transition: all 0.3s ease;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+    padding: 2rem 0;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
+/* Comentarios explicativos en español en cada sección importante */

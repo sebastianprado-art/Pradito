@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Meta tags para SEO y responsividad -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre mi mundo en Minecraft: construcciones, consejos, mods y más. Página personal optimizada para GitHub Pages." />
+  <title>Mi Mundo en Minecraft</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/51/Minecraft_block_grass.png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts Opcional -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar responsivo -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero"><i class="bi bi-cube"></i> Minecraft Fan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#construcciones">Construcciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#consejos">Consejos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mods">Mods y Texturas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#youtube">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center justify-content-center text-center hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Mi Mundo en Minecraft</h1>
+      <p class="lead mb-4">Desde 2015, Minecraft ha sido mi universo creativo. Me encanta porque puedo construir, explorar y compartir aventuras con amigos. ¡La imaginación es el límite!</p>
+      <a href="#construcciones" class="btn btn-lg btn-emerald shadow">Ver mis construcciones</a>
+    </div>
+  </section>
+
+  <!-- Sección 1: Mis construcciones favoritas -->
+  <main>
+    <section id="construcciones" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-emerald">Mis construcciones favoritas</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/1Q8Z4bB.jpg" class="card-img-top" alt="Castillo medieval Minecraft" />
+              <div class="card-body">
+                <h5 class="card-title">Castillo Medieval</h5>
+                <p class="card-text">Mi mayor proyecto: un castillo con puente levadizo y mazmorras secretas.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/2yQ4Z4b.jpg" class="card-img-top" alt="Casa árbol Minecraft" />
+              <div class="card-body">
+                <h5 class="card-title">Casa Árbol</h5>
+                <p class="card-text">Un refugio elevado entre hojas y madera, perfecto para observar el amanecer.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/3Q8Z4bB.jpg" class="card-img-top" alt="Granja automática Minecraft" />
+              <div class="card-body">
+                <h5 class="card-title">Granja Automática</h5>
+                <p class="card-text">Sistema de redstone para cosechar y recolectar alimentos sin esfuerzo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel de capturas de pantalla -->
+    <section class="py-5 bg-sky">
+      <div class="container">
+        <h2 class="mb-4 text-center text-emerald">Galería de Capturas</h2>
+        <div id="minecraftCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.imgur.com/4Q8Z4bB.jpg" class="d-block w-100 rounded" alt="Screenshot Minecraft 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.imgur.com/5Q8Z4bB.jpg" class="d-block w-100 rounded" alt="Screenshot Minecraft 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.imgur.com/6Q8Z4bB.jpg" class="d-block w-100 rounded" alt="Screenshot Minecraft 3" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#minecraftCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#minecraftCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 2: Consejos para nuevos jugadores -->
+    <section id="consejos" class="py-5 bg-earth">
+      <div class="container">
+        <h2 class="mb-4 text-sky">Consejos para nuevos jugadores</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-emerald"></i> Explora antes de construir, conoce tu entorno.</li>
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-emerald"></i> Haz herramientas de piedra lo antes posible.</li>
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-emerald"></i> No olvides llevar antorchas y comida.</li>
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-emerald"></i> Prueba el modo creativo para aprender mecánicas.</li>
+          <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-emerald"></i> ¡Diviértete y experimenta con mods!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección 3: Mis mods y texturas preferidas -->
+    <section id="mods" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4 text-emerald">Mis mods y texturas preferidas</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/7Q8Z4bB.jpg" class="card-img-top" alt="Mod OptiFine" />
+              <div class="card-body">
+                <h5 class="card-title">OptiFine</h5>
+                <p class="card-text">Mejora gráficos y rendimiento, ideal para PCs de todo tipo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/8Q8Z4bB.jpg" class="card-img-top" alt="Texture Pack Faithful" />
+              <div class="card-body">
+                <h5 class="card-title">Faithful</h5>
+                <p class="card-text">Texturas en alta resolución pero fieles al estilo original pixelado.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-minecraft h-100">
+              <img src="https://i.imgur.com/9Q8Z4bB.jpg" class="card-img-top" alt="Mod JourneyMap" />
+              <div class="card-body">
+                <h5 class="card-title">JourneyMap</h5>
+                <p class="card-text">Mapa interactivo para explorar y marcar lugares importantes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="py-5 bg-sky">
+      <div class="container">
+        <h2 class="mb-4 text-emerald">Contacto para jugadores</h2>
+        <form id="contactForm" class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required />
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+            <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+          </div>
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+            <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-emerald w-100" type="submit">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Enlaces a YouTube -->
+    <section id="youtube" class="py-5 bg-earth">
+      <div class="container text-center">
+        <h2 class="mb-4 text-sky">Mi canal de YouTube Gaming</h2>
+        <a href="https://www.youtube.com/@minecraft" target="_blank" class="btn btn-lg btn-sky shadow"><i class="bi bi-youtube"></i> Visita mi canal</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer informativo -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Mi Mundo en Minecraft | Página creada por un fan para fans</p>
+      <small>Optimizada para GitHub Pages y todos los navegadores modernos</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado -->
+  <script src="js/script.js"></script>
+</body>
+</html>
